@@ -1,0 +1,23 @@
+def calculadora_propinas():
+    print("🧾 Bienvenido a la Calculadora de Propinas del Restaurante 🧾")
+    
+    try:
+        monto_cuenta = float(input("Ingrese el monto total de la cuenta: $"))
+        
+        # Cálculo de propinas
+        propina_10 = monto_cuenta * 0.10
+        propina_15 = monto_cuenta * 0.15
+        
+        total_10 = monto_cuenta + propina_10
+        total_15 = monto_cuenta + propina_15
+        
+        # Mostrar resultados
+        print("\n💡 Propinas sugeridas:")
+        print(f"➡ 10% de propina: ${propina_10:.2f} | Total a pagar: ${total_10:.2f}")
+        print(f"➡ 15% de propina: ${propina_15:.2f} | Total a pagar: ${total_15:.2f}")
+    
+    except ValueError:
+        print("⚠️ Error: Por favor, ingrese un número válido para el monto de la cuenta.")
+
+# Ejecutar la función
+calculadora_propinas()
