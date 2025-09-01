@@ -27,7 +27,7 @@ for i in range (1, 6):
             if caracter.isupper():
                 nueva_letra = nueva_letra.upper()
             
-            mensaje_encriptado = nueva_letra
+            mensaje_encriptado += nueva_letra
         
         else:
             # Mantener caracteres no alfabeticos
